@@ -36,9 +36,9 @@ public class ISBNActivity extends AppCompatActivity {
 
     private ConnectivityManager mConnectivityManager = null;
     ProgressDialog mProgress;
-    Button title;
-    Button genre;
-    Button description;
+    TextView title;
+    TextView genre;
+    TextView description;
     private String isbnForImage;
     private static final String coverLibraryURL = "http://covers.openlibrary.org/b/isbn/";
     private static final String suffixLarge = "-L.jpg?default=false";
@@ -65,9 +65,9 @@ public class ISBNActivity extends AppCompatActivity {
 
         imageView = (ImageView)findViewById(R.id.image);
 
-        title = (Button) findViewById(R.id.title);
-        genre = (Button) findViewById(R.id.genre);
-        description = (Button) findViewById(R.id.description);
+        title = (TextView) findViewById(R.id.title);
+        genre = (TextView) findViewById(R.id.genre);
+        description = (TextView) findViewById(R.id.description);
         imageURLString = coverLibraryURL + isbnForImage + suffixLarge;
         new GoogleApiRequest(isbnForImage).execute();
 //        setfoc
@@ -117,10 +117,8 @@ public class ISBNActivity extends AppCompatActivity {
                     connection.setReadTimeout(60000); // 1 minute
                     connection.setConnectTimeout(60000); // 1 minute
                 } catch (MalformedURLException e) {
-                    // Impossible: The only two URLs used in the app are taken from string resources.
                     e.printStackTrace();
                 } catch (ProtocolException e) {
-                    // Impossible: "GET" is a perfectly valid request method.
                     e.printStackTrace();
                 }
                 int responseCode = connection.getResponseCode();
