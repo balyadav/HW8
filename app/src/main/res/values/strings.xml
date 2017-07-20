@@ -21,4 +21,8 @@
     <string name="empty_tweet_qr_code">Can\'t tweet empty! Scan QR code first!</string>
     <string name="internet_unavailable">Internet not available, Cross check your internet connectivity and try again</string>
     <string name="dialog_null_response">API responded with null!</string>
+    <string name="manual_isbn">Book ISBN</string>
+    <string name="get_details">Get Details</string>
+    <string name="cancel">Cancel</string>
+    <string name="json_missing_key">"JSON missing key- %1$s"</string>
 </resources>
