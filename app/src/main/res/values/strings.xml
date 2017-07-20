@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">HW8byadav</string>
+    <string name="action_settings">Settings</string>
+    <string name="second_activity">Second Activity</string>
+    <string name="tweet">Tweet</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="face_detection_result">%1$d faces detected. %2$d smiling faces detected.</string>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="title_activity_main">Barcode Reader Sample</string>
+    <string name="barcode_header">Click &quot;Read Barcode&quot; to read a barcode</string>
+    <string name="read_barcode">Read Barcode</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="call_sensor_api">Call Sensor API</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_success">Barcode read successfully</string>
+    <string name="barcode_failure">No barcode captured</string>
+    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+    <string name="empty_tweet_face_detection">Can\'t tweet empty! Pick photo first!</string>
+    <string name="empty_tweet_qr_code">Can\'t tweet empty! Scan QR code first!</string>
+    <string name="internet_unavailable">Internet not available, Cross check your internet connectivity and try again</string>
+    <string name="dialog_null_response">API responded with null!</string>
+</resources>
